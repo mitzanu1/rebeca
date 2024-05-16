@@ -9,7 +9,7 @@ import 'react-social-icons/instagram'
 import 'react-social-icons/linkedin'
 import Modal from '@/components/modal'
 import _ from 'lodash'
-import { mostre, despreMine } from '@/util/data'
+import { mostre, despreMine1, despreMine2 } from '@/util/data'
 import Cv from '@/components/cv'
 
 export default function Home() {
@@ -81,10 +81,10 @@ export default function Home() {
       </section>
       <section className={styles.txt}>
         <article>
-            {despreMine}
+            {despreMine1}
             <br />
             <br />
-            {despreMine}
+            {despreMine2}
         </article>
       </section>
     </section>
