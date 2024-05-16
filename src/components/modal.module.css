@@ -1,0 +1,19 @@
+.modal {
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100vw;
+  height: 100wh;
+  z-index: 2;
+}
+
+.modal div {
+  text-align: center;
+  padding:4%;
+}
+
+@media screen and (max-width:1500px) {
+  .modal {
+    display: none;
+  }
+}
