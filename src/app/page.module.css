@@ -1,12 +1,9 @@
 .main {
-  color: azure;
+  color: black;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url('/hero.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  scroll-behavior: smooth;
+  background-color: white;
 }
 
 .main nav {
@@ -17,6 +14,7 @@
   height: 5rem;
   padding: 1.5rem;
   border-bottom: 0.5px solid rgb(170, 171, 250);
+  background-color: rgb(252, 252, 42);
 }
 
 .main ul {
@@ -27,17 +25,17 @@
 }
 
 .main li {
-  margin-right: 10%;
+  margin-right: 2%;
 }
 
 .nav {
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .social {
   display: flex;
   justify-content: flex-end;
-  margin-right: 10%;
+  margin-right: 5%;
   line-height: 1;
 }
 
@@ -49,11 +47,13 @@
 .intro {
   display: flex;
   flex-direction: row;
-  margin-top: 3%;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-left: 10%;
 }
 
 .intro h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 3rem;
 }
 
@@ -61,30 +61,29 @@
   font-size: 1.5rem;
 }
 
-.desc {
-  margin: 5% 0 0 15%;
+.rbk {
+  width: 300px;
+  height: 500px;
 }
 
 .portfolio {
   text-align: center;
   min-height: 100vh;
+  background-color: rgb(252, 252, 42);
 }
 
 .portfolio h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   padding-top: 3%;
 }
 
-.portfolio h6 {
-  font-size: 1.5rem;
-  margin-top: 1%;
-}
-
 .list {
+  margin: 0 auto;
   margin-top: 5%;
   display: grid;
   grid-template-columns: auto auto auto;
-  row-gap: 8rem;
+  row-gap: 2rem;
+  max-width: 65%;
 }
 
 .card img {
@@ -93,53 +92,25 @@
   box-shadow: 5px 5px 19px -8px rgba(0,0,0,0.75);
 }
 
-.despre {
-  display: grid;
-  padding-top: 3%;
-  grid-template-areas: 
-    'titlu titlu'
-    'img txt';
-  grid-auto-columns: 50%;
-  grid-template-rows: 4rem auto;
-  min-height: 80vh;
-  text-align: center;
-}
-
-.titlu {
-  grid-area:titlu;
-  font-size: 3rem;
-  height: 1rem;
-}
-
-.img {
-  grid-area:img;
-  position: relative;
-  background-color: #111315;
-  margin-top: 5%;
-}
 
 .txt {
-  grid-area:txt;
-  margin-top: 5%;
-  font-size: 2rem;
-  padding:1.5rem;
-  border: 1px solid rgb(170, 171, 250);
-  border-right: none;
-
+  font-size: 1.7rem;
+  padding:2rem;
+  max-width: 50%;
 }
 
 .footer {
+  color: azure;
   text-align: center;
   padding: 2rem;
   border-top: 1px solid rgb(170, 171, 250);
+  background-color: black;
 }
 
-.cv {
-  font-size: 3rem;
-  padding-top: 3%;
-  text-align: center;
+.flexcol {
+  display: flex;
+  flex-direction: column;
 }
-
 @media screen and (max-width: 1350px) {
   .intro {
     margin: 0 auto;
@@ -153,14 +124,7 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     row-gap: 2rem;
-  }
-  .despre {
-    grid-template-areas: 
-      'titlu'
-      'img'
-      'txt';
-    grid-auto-columns:100%;
-    grid-template-rows: 4rem 30rem auto;
+    max-width: 90%;
   }
   .txt {
     border: none;
@@ -177,9 +141,23 @@
     margin: 0;
     justify-content: space-around;
   }
-  
+  .intro {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+  .pic{
+    margin-top: 3%;
+  }
+  .flexcol {
+    flex-direction: column-reverse;
+  }
   .portfolio h1 {
-    margin-top: 10%;
+    padding-top: 10%;
   }
   .social {
     justify-content: center!important;
@@ -187,13 +165,13 @@
   .nav{
     margin-top: 1rem!important;
   }
-  .intro {
-    text-align: center;
-    margin-top: 30%;
+  .txt {
+    max-width: 100%;
   }
   .list {
     grid-template-columns: auto;
     margin-top: 10%;
+    max-width: 100%;
   }
   .despre {
     margin-top: 10%;
@@ -217,3 +195,10 @@
   opacity: 0.6;
   z-index: 2;
 }
+
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
+

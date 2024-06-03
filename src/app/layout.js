@@ -1,7 +1,10 @@
 import './globals.css'
-import { Dancing_Script } from 'next/font/google'
+import { Cormorant_Garamond } from 'next/font/google'
 
-const font = Dancing_Script({ subsets: ['latin'] })
+const font = Cormorant_Garamond({ 
+  subsets: ['latin'],
+  weight:'700'
+})
 
 export const metadata = {
   title: 'Rebecca Andreescu',
