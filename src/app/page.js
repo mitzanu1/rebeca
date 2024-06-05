@@ -34,7 +34,7 @@ export default function Home() {
           <div className={styles.pic}>
             <Image 
               alt='Rebecca Andreescu'
-              src='/rbk-no-bg.png'
+              src='/rbk.png'
               width={300}
               height={500}
               className={styles.rbk}

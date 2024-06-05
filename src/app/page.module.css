@@ -13,7 +13,6 @@
   width: 100%;
   height: 5rem;
   padding: 1.5rem;
-  border-bottom: 0.5px solid rgb(170, 171, 250);
   background-color: rgb(252, 252, 42);
 }
 
@@ -29,7 +28,7 @@
 }
 
 .nav {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .social {
@@ -62,7 +61,7 @@
 }
 
 .rbk {
-  width: 300px;
+  width: 400px;
   height: 500px;
 }
 
@@ -73,7 +72,7 @@
 }
 
 .portfolio h1 {
-  font-size: 5rem;
+  font-size: 2.5rem;
   padding-top: 3%;
 }
 
@@ -94,16 +93,17 @@
 
 
 .txt {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   padding:2rem;
   max-width: 50%;
+  margin: 0 auto;
+  margin-top: 7%;
 }
 
 .footer {
   color: azure;
   text-align: center;
   padding: 2rem;
-  border-top: 1px solid rgb(170, 171, 250);
   background-color: black;
 }
 
